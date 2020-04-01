@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b2aff7b-b053-4ac2-bfbd-b0eb1785c9b7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1U5mlXibilA2OwLwj5dl70Uq0GE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\troin\PhpstormProjects\mvc-project\js" />
+      <recent name="C:\Users\troin\PhpstormProjects\mvc-project\css" />
+      <recent name="C:\Users\troin\PhpstormProjects\mvc-project\views" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration useDefault="false">C:\Program Files\VisualSVN Server\bin\svn.exe</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b2aff7b-b053-4ac2-bfbd-b0eb1785c9b7" name="Default Changelist" comment="" />
+      <created>1574654981755</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574654981755</updated>
+      <workItem from="1574654985384" duration="13292000" />
+      <workItem from="1574695353184" duration="3424000" />
+      <workItem from="1574747448958" duration="16041000" />
+      <workItem from="1574844876879" duration="7075000" />
+      <workItem from="1575002495654" duration="3146000" />
+      <workItem from="1583604135810" duration="707000" />
+      <workItem from="1583605761474" duration="540000" />
+      <workItem from="1583752197688" duration="565000" />
+      <workItem from="1585662262926" duration="22000" />
+      <workItem from="1585662285665" duration="890000" />
+      <workItem from="1585665258422" duration="452000" />
+      <workItem from="1585714876216" duration="3666000" />
+      <workItem from="1585718563292" duration="946000" />
+      <workItem from="1585720869434" duration="520000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="363" key="AbstractVcsHelper.FilterDialog.org.jetbrains.idea.svn.history.SvnVersionFilterComponent" timestamp="1585716366928">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="363" key="AbstractVcsHelper.FilterDialog.org.jetbrains.idea.svn.history.SvnVersionFilterComponent/0.0.1920.1040@0.0.1920.1040" timestamp="1585716366928" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1585721457012">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585721457012" />
+    <state x="830" y="413" key="Github.ShareDialog" timestamp="1585715276194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="830" y="413" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585715276194" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1585718540155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585718540155" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585720869607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585720869607" />
+    <state x="758" y="419" key="svn.passwordDialog" timestamp="1585720905666">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="758" y="419" key="svn.passwordDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585720905666" />
+    <state x="790" y="311" width="415" height="622" key="svn.repositoryBrowser" timestamp="1585715297933">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="311" width="415" height="622" key="svn.repositoryBrowser/0.0.1920.1040@0.0.1920.1040" timestamp="1585715297933" />
+    <state x="735" y="386" key="svn4idea.checkout.options" timestamp="1585716316534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="735" y="386" key="svn4idea.checkout.options/0.0.1920.1040@0.0.1920.1040" timestamp="1585716316534" />
+    <state x="733" y="388" key="svn4idea.export.options" timestamp="1585721458205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="733" y="388" key="svn4idea.export.options/0.0.1920.1040@0.0.1920.1040" timestamp="1585721458205" />
+    <state x="775" y="295" key="svn4idea.import.options" timestamp="1585662974559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="775" y="295" key="svn4idea.import.options/0.0.1920.1040@0.0.1920.1040" timestamp="1585662974559" />
+    <state x="713" y="333" key="svn4idea.mkdir.options" timestamp="1585716377391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="713" y="333" key="svn4idea.mkdir.options/0.0.1920.1040@0.0.1920.1040" timestamp="1585716377391" />
+  </component>
+</project>
