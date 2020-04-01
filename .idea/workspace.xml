@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b2aff7b-b053-4ac2-bfbd-b0eb1785c9b7" name="Default Changelist" comment="" />
+    <list default="true" id="7b2aff7b-b053-4ac2-bfbd-b0eb1785c9b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/Filter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/sort.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/sort.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +18,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1U5mlXibilA2OwLwj5dl70Uq0GE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,6 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
@@ -54,12 +65,23 @@
       <workItem from="1585665258422" duration="452000" />
       <workItem from="1585714876216" duration="3666000" />
       <workItem from="1585718563292" duration="946000" />
-      <workItem from="1585720869434" duration="520000" />
+      <workItem from="1585720869434" duration="7299000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
@@ -69,14 +91,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="722" y="363" key="AbstractVcsHelper.FilterDialog.org.jetbrains.idea.svn.history.SvnVersionFilterComponent/0.0.1920.1040@0.0.1920.1040" timestamp="1585716366928" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1585721457012">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1585721540584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585721457012" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585721540584" />
     <state x="830" y="413" key="Github.ShareDialog" timestamp="1585715276194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="830" y="413" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585715276194" />
+    <state x="718" y="334" key="NewPhpClassDialog" timestamp="1585722035091">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585722035091" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1585718540155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -97,10 +123,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="735" y="386" key="svn4idea.checkout.options/0.0.1920.1040@0.0.1920.1040" timestamp="1585716316534" />
-    <state x="733" y="388" key="svn4idea.export.options" timestamp="1585721458205">
+    <state x="733" y="388" key="svn4idea.export.options" timestamp="1585721544591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="733" y="388" key="svn4idea.export.options/0.0.1920.1040@0.0.1920.1040" timestamp="1585721458205" />
+    <state x="733" y="388" key="svn4idea.export.options/0.0.1920.1040@0.0.1920.1040" timestamp="1585721544591" />
     <state x="775" y="295" key="svn4idea.import.options" timestamp="1585662974559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

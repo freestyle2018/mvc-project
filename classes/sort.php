@@ -4,8 +4,8 @@
 Class Sort
 {
 
-    function get() {
-        $sort = (empty($_GET['sort'])) ? '' : $_GET['sort'];
+    function get($value) {
+        $sort = $value;
 
         $sort_value = "";
         $sort_top = "";

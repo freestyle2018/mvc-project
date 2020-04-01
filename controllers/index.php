@@ -7,11 +7,17 @@ Class Controller_Index Extends Controller_Base {
 
     // экшен
     function index() {
-        // номер страницы
-        $page = (empty($_GET['page'])) ? '1' : $_GET['page'];
+
+        $filter = new Filter();
+
+        // номер страницы и сортировка
+        $page = $filter->out('int',(empty($_GET['page'])) ? '1' : $_GET['page']);
+        $sort_get = $filter->out('string',(empty($_GET['sort'])) ? '' : $_GET['sort']);
+
+        echo $sort_get;
 
         $sort = new Sort();
-        $sortirovka = $sort->get();
+        $sortirovka = $sort->get($sort_get);
 
         $news = new Model_News();
         $NewsList = $news->getNewsLimit($page, $sortirovka[2]);
