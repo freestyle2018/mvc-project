@@ -18,43 +18,8 @@ class Filter
         }
     }
 
-    public  $clean = 'all';
 
-    /*  фильтруем исходящие данные  */
-    protected function preFilter($filterChain)
-    {
-        $this->clean  = trim(strtoupper($this->clean));
-        $data = array(
-            'GET'    =>&$_GET,
-            'POST'   =>&$_POST,
-            'COOKIE' =>&$_COOKIE,
-            'FILES'  =>&$_FILES
-        );
-
-        if($this->clean === 'ALL' || $this->clean === '*')
-        {
-            $this->clean = 'GET,POST,COOKIE,FILES';
-        }
-        $dataForClean = str_split(',',$this->clean);
-        if(count($dataForClean))
-        {
-            foreach ($dataForClean as $key => $value)
-            {
-                if(isset ($data[$value]) && count($data[$value]))
-                {
-                    $this->doXssClean($data[$value]);
-                }
-            }
-        }
-        return true;
-    }
-
-    protected function postFilter($filterChain)
-    {
-        // logic being applied after the action is executed
-    }
-
-    private function doXssClean(&$data)
+    public function doXssClean($data)
     {
         if(is_array($data) && count($data))
         {

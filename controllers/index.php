@@ -18,7 +18,8 @@ Class Controller_Index Extends Controller_Base {
         $sortirovka = $sort->get($sort_get);
 
         $news = new Model_News();
-        $NewsList = $news->getNewsLimit($page, $sortirovka[2]);
+        $NewsList = $filter->doXssClean($news->getNewsLimit($page, $sortirovka[2]));
+
         $total = $news->getCountNews();
         $pagination = new Pagination($total, $page, $news::SHOW_BY_DEFAULT, '');
 

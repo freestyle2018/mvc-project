@@ -109,7 +109,7 @@ class Pagination
         }
         else{
             return
-                '<li><a href= ?page=' . $page . '>' . $text . '</a></li>';
+                '<li><a href= ?page=' . $page . '&sort=' . $sortirovka[1] . $sortirovka[0] . '>' . $text . '</a></li>';
         }
 
     }

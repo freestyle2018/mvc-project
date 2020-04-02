@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b2aff7b-b053-4ac2-bfbd-b0eb1785c9b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Filter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pagination.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,8 @@
       <workItem from="1585665258422" duration="452000" />
       <workItem from="1585714876216" duration="3666000" />
       <workItem from="1585718563292" duration="946000" />
-      <workItem from="1585720869434" duration="8209000" />
+      <workItem from="1585720869434" duration="9063000" />
+      <workItem from="1585791232657" duration="5397000" />
     </task>
     <servers />
   </component>
@@ -75,7 +77,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -101,14 +105,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585722035091" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1585796874635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585796874635" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1585718540155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585718540155" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585720869607">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585791237673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585720869607" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585791237673" />
     <state x="758" y="419" key="svn.passwordDialog" timestamp="1585720905666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
