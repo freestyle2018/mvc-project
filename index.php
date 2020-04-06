@@ -1,5 +1,9 @@
 <?php
 
+require 'vendor/autoload.php';
+require 'vendor/phpauth/phpauth/Auth.php';
+require 'vendor/phpauth/phpauth/Config.php';
+
 // включим отображение всех ошибок
 error_reporting (E_ALL);
 // подключаем конфиг

@@ -12,6 +12,7 @@ Class Controller_Add Extends Controller_Base {
         $zadachiInfo = $model->get_Zadachi();
 
         $this->template->vars('Zadachi', $zadachiInfo);
+
         $this->template->view('index');
     }
 }

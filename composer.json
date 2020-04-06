@@ -1,0 +1,8 @@
+{
+    "require": {
+        "phpauth/phpauth": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    }
+}
