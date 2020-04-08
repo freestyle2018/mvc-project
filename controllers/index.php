@@ -11,8 +11,8 @@ Class Controller_Index Extends Controller_Base {
         $filter = new Filter();
 
         // номер страницы и сортировка
-        $page = $filter->out('int',(empty($_GET['page'])) ? '1' : $_GET['page']);
-        $sort_get = $filter->out('string',(empty($_GET['sort'])) ? '' : $_GET['sort']);
+        $page = $filter->out('int',(empty($_GET['page']) ? '1' : $_GET['page']));
+        $sort_get = $filter->out('string',(empty($_GET['sort']) ? '' : $_GET['sort']));
 
         $sort = new Sort();
         $sortirovka = $sort->get($sort_get);

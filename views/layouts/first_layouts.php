@@ -14,7 +14,8 @@
 
 <body>
 
-
+    <div class="reg"><a href="/user/regist">Регистрация</a></div>
+    <div class="login"><a href="/user/login">Авторизация</a></div>
 
     <div class="container-fluid">
         <div class="container">

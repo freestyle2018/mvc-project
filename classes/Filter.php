@@ -13,9 +13,11 @@ class Filter
             }
         }
         else if($datchik == 'string'){
-            $value = preg_replace("/[^A-Za-z0-9?!\-]/","",$parametr);
+            $value = preg_replace("/[^A-Za-z0-9\-]/","",$parametr);
             return $value;
         }
+
+
     }
 
 
