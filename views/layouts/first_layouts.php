@@ -17,6 +17,12 @@
     <div class="reg"><a href="/user/regist">Регистрация</a></div>
     <div class="login"><a href="/user/login">Авторизация</a></div>
 
+    <?php
+        if($authentication == true){
+            echo "<div class=\"reg\"><a href=\"/user/logout\">Выйти</a></div>";
+        }
+    ?>
+
     <div class="container-fluid">
         <div class="container">
             <h1>Тестовое задание</h1>
