@@ -9,6 +9,8 @@ Class Controller_Index Extends Controller_Base {
     function index() {
 
         $filter = new Filter();
+        $auth = new Authentication();
+        $authentication = $auth->index();
 
         // номер страницы и сортировка
         $page = $filter->out('int',(empty($_GET['page']) ? '1' : $_GET['page']));
@@ -23,6 +25,7 @@ Class Controller_Index Extends Controller_Base {
         $total = $news->getCountNews();
         $pagination = new Pagination($total, $page, $news::SHOW_BY_DEFAULT, '');
 
+        $this->template->vars('authentication', $authentication);
         $this->template->vars('page', $page);
         $this->template->vars('sortirovka', $sortirovka);
         $this->template->vars('NewsList', $NewsList);

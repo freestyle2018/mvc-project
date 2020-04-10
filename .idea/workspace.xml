@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b2aff7b-b053-4ac2-bfbd-b0eb1785c9b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/Authentication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user/info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user/out.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/auth/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/layouts/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Authentication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/controller_base.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/controller_base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layouts/first_layouts.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/first_layouts.php" afterDir="false" />
     </list>
@@ -117,7 +120,9 @@
       <workItem from="1586154689674" duration="1128000" />
       <workItem from="1586156124718" duration="5041000" />
       <workItem from="1586332124497" duration="11017000" />
-      <workItem from="1586410246261" duration="13865000" />
+      <workItem from="1586410246261" duration="14762000" />
+      <workItem from="1586446411468" duration="608000" />
+      <workItem from="1586503063031" duration="10406000" />
     </task>
     <servers />
   </component>
@@ -145,10 +150,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="722" y="363" key="AbstractVcsHelper.FilterDialog.org.jetbrains.idea.svn.history.SvnVersionFilterComponent/0.0.1920.1040@0.0.1920.1040" timestamp="1585716366928" />
-    <state x="526" y="193" key="FileChooserDialogImpl" timestamp="1586413743575">
+    <state x="526" y="193" key="FileChooserDialogImpl" timestamp="1586506863317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586413743575" />
+    <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586506863317" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585721540584" />
     <state x="830" y="413" key="Github.ShareDialog" timestamp="1585715276194">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -158,25 +163,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585722035091" />
-    <state x="565" y="310" key="NewPhpFileDialog" timestamp="1586428696506">
+    <state x="565" y="310" key="NewPhpFileDialog" timestamp="1586511878132">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="565" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586428696506" />
+    <state x="565" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586511878132" />
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585796874635" />
     <state x="220" y="0" key="SettingsEditor" timestamp="1586334116908">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="220" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586334116908" />
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585718540155" />
-    <state x="467" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586413269566">
+    <state x="365" y="146" key="com.intellij.ide.util.TipDialog" timestamp="1586503231948">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="467" y="241" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586413269566" />
+    <state x="365" y="146" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586503231948" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585791237673" />
-    <state x="380" y="0" width="606" height="728" key="find.popup" timestamp="1586413750330">
+    <state x="380" y="0" width="606" height="728" key="find.popup" timestamp="1586506873197">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="380" y="0" width="606" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1586413750330" />
+    <state x="380" y="0" width="606" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1586506873197" />
     <state x="758" y="419" key="svn.passwordDialog" timestamp="1585720905666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

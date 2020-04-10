@@ -27,8 +27,6 @@ Class Authentication  extends \PHPUnit\Framework\TestCase
         self::$dbh = new PDO("mysql:host=localhost;dbname=phpauthtest", "root", "");
         self::$config = new PHPAuth\Config(self::$dbh);
         self::$auth   = new PHPAuth\Auth(self::$dbh, self::$config);
-
-        self::$auth->config->cookie_renew = "+30 minutes";
     }
 
     function index() {
@@ -44,6 +42,8 @@ Class Authentication  extends \PHPUnit\Framework\TestCase
                 return false;
             }
             else{
+                self::$auth->config->cookie_renew = "+30 minutes";
+
                 return true;
             }
 
@@ -55,8 +55,6 @@ Class Authentication  extends \PHPUnit\Framework\TestCase
 
 
     function out() {
-
-
         $sess_email = empty($_SESSION["email"]) ? '' : $_SESSION["email"];
 
         $hash = self::$dbh->query("SELECT hash FROM phpauth_sessions WHERE uid = (SELECT id FROM phpauth_users WHERE email = '".$sess_email."');", PDO::FETCH_ASSOC)->fetch()['hash'];

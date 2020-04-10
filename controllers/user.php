@@ -7,12 +7,8 @@ Class Controller_User Extends Controller_Base {
     // шаблон
     public $layouts = "first_layouts";
 
-
-
     // экшен
     function index() {
-
-
         $info = "ИВАН";
 
         $this->template->vars('info', $info);
@@ -77,7 +73,6 @@ Class Controller_User Extends Controller_Base {
     }
 
     function info() {
-
         $auth = new Authentication();
         $authentication = $auth->index();
 
@@ -87,7 +82,6 @@ Class Controller_User Extends Controller_Base {
 
         $this->template->vars('authentication', $authentication);
         $this->template->view('info');
-
     }
 
     function out() {

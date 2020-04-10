@@ -26,7 +26,7 @@ Abstract Class Controller_Base extends \PHPUnit\Framework\TestCase {
 
     protected $registry;
     protected $template;
-    protected $layouts; // шаблон
+    public $layouts; // шаблон
 
     public $vars = array();
 

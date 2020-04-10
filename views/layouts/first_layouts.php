@@ -14,12 +14,13 @@
 
 <body>
 
-    <div class="reg"><a href="/user/regist">Регистрация</a></div>
-    <div class="login"><a href="/user/login">Авторизация</a></div>
+    <div class="reg"><a href="/user/regist/">Регистрация</a></div>
+    <div class="login"><a href="/user/login/">Авторизация</a></div>
+    <div class="login"><a href="/user/info">Информация</a></div>
 
     <?php
         if($authentication == true){
-            echo "<div class=\"reg\"><a href=\"/user/logout\">Выйти</a></div>";
+            echo "<div class=\"reg\"><a href=\"/user/out\">Выйти</a></div>";
         }
     ?>
 
@@ -40,5 +41,27 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    // получаем AJAX запрос
 
+    $(window).on('focus blur load', function() {
+        if(document.location.pathname == "/user/login/" || document.location.pathname == "/user/regist/") {}
+
+        else{
+            $.ajax({
+                url: '/auth',
+                //dataType: 'json',
+                success: function(html){
+                    if(html == "0" && (document.location.pathname != "/user/login" || document.location.pathname != "/user/regist/")) {
+                        window.location.replace("/user/login/");
+                    }
+                    //alert(document.location.pathname);
+                }
+            });
+        }
+
+
+    });
+</script>
 </html>
