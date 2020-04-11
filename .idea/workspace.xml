@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b2aff7b-b053-4ac2-bfbd-b0eb1785c9b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/user/add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Authentication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Filter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/auth/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/auth/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/first_layouts.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/first_layouts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpauth/phpauth/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpauth/phpauth/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/user/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/info.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,7 @@
       <workItem from="1586410246261" duration="14762000" />
       <workItem from="1586446411468" duration="608000" />
       <workItem from="1586503063031" duration="10952000" />
-      <workItem from="1586615819282" duration="8015000" />
+      <workItem from="1586615819282" duration="15744000" />
     </task>
     <servers />
   </component>
@@ -162,10 +163,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585722035091" />
-    <state x="565" y="310" key="NewPhpFileDialog" timestamp="1586511878132">
+    <state x="565" y="310" key="NewPhpFileDialog" timestamp="1586634931020">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="565" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586511878132" />
+    <state x="565" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586634931020" />
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585796874635" />
     <state x="220" y="0" key="SettingsEditor" timestamp="1586334116908">
       <screen x="0" y="0" width="1366" height="728" />

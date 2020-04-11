@@ -17,7 +17,7 @@ Class Model_Users{
 
     }
 
-    public function get_Zadachi(){
+    public function get_Users(){
         $query = "SELECT zadacha_id, zadacha_user, zadacha_email, zadacha_text FROM zadacha";
 
         $result = mysqli_query($this->db, $query);
@@ -31,4 +31,28 @@ Class Model_Users{
 
         return $row;
     }
+
+    public function delete_Users($id_user){
+        $query = "DELETE FROM zadacha WHERE zadacha_id = ".$id_user;
+
+        $result = mysqli_query($this->db, $query);
+        if(!$result) {
+            exit(mysqli_error($this->db));
+        }
+
+    }
+
+    public function add_Users($user, $email, $text){
+        $query = "INSERT INTO `zadacha` (`zadacha_id`, `zadacha_user`, `zadacha_email`, `zadacha_text`) VALUES (NULL, '".$user."', '".$email."', '".$text."')";
+
+        $result = mysqli_query($this->db, $query);
+        if(!$result) {
+            exit(mysqli_error($this->db));
+        }
+        else{
+            return true;
+        }
+
+    }
+
 }

@@ -16,6 +16,12 @@ class Filter
             $value = preg_replace("/[^A-Za-z0-9\-]/","",$parametr);
             return $value;
         }
+        else if($datchik == 'email'){
+            if(preg_match("/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/", $parametr)){
+                $value = $parametr;
+                return $value;
+            }
+        }
 
 
     }

@@ -235,7 +235,7 @@ class Auth/* implements AuthInterface*/
             return $return;
         }
 
-        $addUser = $this->addUser($email, $password, $params, $use_email_activation);
+        $addUser = $this->addUser($email, $password, $params, $use_email_activation, '');
 
         if ($addUser['error'] != 0) {
             $return['message'] = $addUser['message'];
@@ -644,7 +644,7 @@ VALUES (:uid, :hash, :expiredate, :ip, :agent, :cookie_crc)
     {
         $return['error'] = true;
 
-        $query = "INSERT INTO {$this->config->table_users} (isactive) VALUES (0)";
+        $query = "INSERT INTO {$this->config->table_users} (isactive, auth) VALUES (0, '')";
         $query_prepared = $this->dbh->prepare($query);
 
         if (!$query_prepared->execute()) {

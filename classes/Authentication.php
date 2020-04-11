@@ -64,7 +64,8 @@ Class Authentication  extends \PHPUnit\Framework\TestCase
     }
 
     function status() {
-        $status = self::$dbh->query("SELECT status FROM phpauth_users WHERE email = '".self::$sess_email."');", PDO::FETCH_ASSOC);
+
+        $status = self::$dbh->query("SELECT auth FROM phpauth_users WHERE email = '".self::$sess_email."';", PDO::FETCH_ASSOC)->fetch()['auth'];
 
         return $status;
     }
