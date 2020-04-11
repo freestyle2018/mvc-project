@@ -13,9 +13,12 @@ Class Controller_Auth Extends Controller_Base {
         $auth = new Authentication();
         $authentication = $auth->index();
 
-        $text = ($authentication === true) ? '1' : '0';
+        $auth = ($authentication["auth"] === true) ? '1' : '0';
+        $status = $authentication["status"];
 
-        $this->template->vars('text', $text);
+
+        $this->template->vars('auth', $auth);
+        $this->template->vars('status', $status);
         $this->template->view('index');
     }
 

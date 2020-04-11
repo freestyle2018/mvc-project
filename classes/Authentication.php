@@ -21,47 +21,62 @@ Class Authentication  extends \PHPUnit\Framework\TestCase
      */
     public static $dbh;
 
+    public static $sess_email;
+
     function __construct() {
         if(!isset($_SESSION)) session_start();
 
         self::$dbh = new PDO("mysql:host=localhost;dbname=phpauthtest", "root", "");
         self::$config = new PHPAuth\Config(self::$dbh);
         self::$auth   = new PHPAuth\Auth(self::$dbh, self::$config);
+        self::$sess_email = !isset($_SESSION["email"]) ? '' : $_SESSION["email"];
     }
 
     function index() {
+        $result = array();
 
-        $sess_email = empty($_SESSION["email"]) ? '' : $_SESSION["email"];
-
-        if($sess_email != '') {
-            $hash = self::$dbh->query("SELECT hash FROM phpauth_sessions WHERE uid = (SELECT id FROM phpauth_users WHERE email = '".$sess_email."');", PDO::FETCH_ASSOC)->fetch()['hash'];
+        if(self::$sess_email != '') {
+            $hash = self::$dbh->query("SELECT hash FROM phpauth_sessions WHERE uid = (SELECT id FROM phpauth_users WHERE email = '".self::$sess_email."');", PDO::FETCH_ASSOC)->fetch()['hash'];
 
             $yslovie = self::$auth->checkSession($hash);
 
-            if($yslovie == false){
-                return false;
+            if($yslovie === false){
+                $result["auth"] =  false;
+                $result["status"] = "";
+                return $result;
             }
             else{
                 self::$auth->config->cookie_renew = "+30 minutes";
 
-                return true;
+                $result["status"] = $this->status();
+                $result["auth"] =  true;
+                return $result;
             }
 
         }
         else {
-            return false;
+            $result["auth"] =  false;
+            $result["status"] = "";
+            return $result;
         }
+
+
     }
 
+    function status() {
+        $status = self::$dbh->query("SELECT status FROM phpauth_users WHERE email = '".self::$sess_email."');", PDO::FETCH_ASSOC);
+
+        return $status;
+    }
 
     function out() {
-        $sess_email = empty($_SESSION["email"]) ? '' : $_SESSION["email"];
+        $hash = self::$dbh->query("SELECT hash FROM phpauth_sessions WHERE uid = (SELECT id FROM phpauth_users WHERE email = '".self::$sess_email."');", PDO::FETCH_ASSOC)->fetch()['hash'];
 
-        $hash = self::$dbh->query("SELECT hash FROM phpauth_sessions WHERE uid = (SELECT id FROM phpauth_users WHERE email = '".$sess_email."');", PDO::FETCH_ASSOC)->fetch()['hash'];
-
-        $auth = self::$auth->logout($hash);
+        self::$auth->logout($hash);
 
         session_destroy();
+
+        return true;
     }
 
 }

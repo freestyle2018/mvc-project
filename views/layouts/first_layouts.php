@@ -51,12 +51,12 @@
         else{
             $.ajax({
                 url: '/auth',
-                //dataType: 'json',
-                success: function(html){
-                    if(html == "0" && (document.location.pathname != "/user/login" || document.location.pathname != "/user/regist/")) {
-                        window.location.replace("/user/login/");
+                dataType: 'json',
+                //data: data,
+                success: function(data){
+                    if(data.auth == "0" && (document.location.pathname != "/user/login" || document.location.pathname != "/user/regist/")) {
+                       window.location.replace("/user/login/?error=go");
                     }
-                    //alert(document.location.pathname);
                 }
             });
         }

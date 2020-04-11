@@ -1,5 +1,9 @@
 <p><b><?php echo $message; ?></b></p>
 
+<?php
+    if($error != ""){echo "You are not logged in!";}
+?>
+
 <form method="post" action="/user/login">
     <p><b>Авторизация на сайте:</b></p>
     <p>

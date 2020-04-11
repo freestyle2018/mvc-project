@@ -36,7 +36,7 @@ Class Controller_User Extends Controller_Base {
             $this->template->vars('message', "");
         }
 
-        $this->template->vars('authentication', $authentication);
+        $this->template->vars('authentication', $authentication["auth"]);
         $this->template->vars('email', $filter->doXssClean($email));
         $this->template->view('regist');
     }
@@ -48,6 +48,7 @@ Class Controller_User Extends Controller_Base {
         $auth = new Authentication();
         $authentication = $auth->index();
 
+        $error = empty($_GET['error']) ? '' : $_GET['error'];
         $email = empty($_POST['email']) ? '' : $_POST['email'];
         $pass = empty($_POST['pass']) ? '' : $_POST['pass'];
 
@@ -67,7 +68,8 @@ Class Controller_User Extends Controller_Base {
             $this->template->vars('message', "");
         }
 
-        $this->template->vars('authentication', $authentication);
+        $this->template->vars('authentication', $authentication["auth"]);
+        $this->template->vars('error', $filter->doXssClean($error));
         $this->template->vars('email', $filter->doXssClean($email));
         $this->template->view('login');
     }
@@ -76,11 +78,11 @@ Class Controller_User Extends Controller_Base {
         $auth = new Authentication();
         $authentication = $auth->index();
 
-        if($authentication === true) {
+        if($authentication["auth"] === true) {
             $this->template->vars('text', "Текст видный после авторизации!");
         }
 
-        $this->template->vars('authentication', $authentication);
+        $this->template->vars('authentication', $authentication["auth"]);
         $this->template->view('info');
     }
 
