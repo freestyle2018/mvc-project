@@ -177,7 +177,7 @@ class Auth/* implements AuthInterface*/
     * @return array $return
     */
     //@todo: => registerUserAccount
-    public function register($email, $password, $repeatpassword, $params = [], $captcha_response = null, $use_email_activation = null)
+    public function register($email, $password, $repeatpassword, $params = [], $captcha_response = null, $use_email_activation = true)
     {
         $return['error'] = true;
         $block_status = $this->isBlocked();
@@ -1718,7 +1718,7 @@ VALUES (:uid, :hash, :expiredate, :ip, :agent, :cookie_crc)
         // Check configuration for custom SMTP parameters
         try {
             // Server settings
-            if ($this->config->smtp) {
+            //if ($this->config->smtp) {
 
                 if ($this->config->smtp_debug) {
                     $mail->SMTPDebug = $this->config->smtp_debug;
@@ -1741,7 +1741,7 @@ VALUES (:uid, :hash, :expiredate, :ip, :agent, :cookie_crc)
                 }
 
                 $mail->Port = $this->config->smtp_port;
-            } //without this params internal mailer will be used.
+            //} //without this params internal mailer will be used.
 
             //Recipients
             $mail->setFrom($this->config->site_email, $this->config->site_name);

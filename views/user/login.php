@@ -1,7 +1,7 @@
 <p><b><?php echo $message; ?></b></p>
 
 <?php
-    if($error != ""){echo "You are not logged in!";}
+    if($error == "go"){echo "You are not logged in!";}
 ?>
 
 <form method="post" action="/user/login">

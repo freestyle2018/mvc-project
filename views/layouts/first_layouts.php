@@ -43,25 +43,43 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-    // получаем AJAX запрос
+
+
+    function in_array(value, array) {
+        for(var i=0; i<array.length; i++){
+            if(value == array[i]) return true;
+        }
+        return false;
+    }
+
+    function getSomeValue() {
+        var value = 0;
+
+        // получаем AJAX запрос
+        $.ajax({
+            url: '/auth',
+            dataType: 'json',
+            success: function(data)
+            {
+                value = data.auth;
+            }
+        });
+        return value;
+    }
 
     $(window).on('focus blur load', function() {
-        if(document.location.pathname == "/user/login/" || document.location.pathname == "/user/regist/") {}
+        var urls = ["/user/login/", "/user/login", "/user/regist/", "/user/activate/"];
+        var url = document.location.pathname;
 
+        proverka = in_array(url, urls);
+        auth = getSomeValue();
+
+        if(proverka === true) {}
         else{
-            $.ajax({
-                url: '/auth',
-                dataType: 'json',
-                //data: data,
-                success: function(data){
-                    if(data.auth == "0" && (document.location.pathname != "/user/login" || document.location.pathname != "/user/regist/")) {
-                       window.location.replace("/user/login/?error=go");
-                    }
-                }
-            });
+            if(auth == 0 && (proverka === false)) {
+               window.location.replace("/user/login/?error=go");
+            }
         }
-
-
     });
 </script>
 </html>
