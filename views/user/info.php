@@ -1,7 +1,7 @@
 
 <?php if(isset($text)){echo $text;} ?>
 
-<?php if(isset($text)){ ?>
+<?php if($authentication === true){ ?>
     <?php foreach($Users as $row) :?>
         <div class='quick-links'>
             » <?php echo $row['zadacha_user']?> -

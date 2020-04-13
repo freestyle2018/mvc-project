@@ -59,8 +59,10 @@
         $.ajax({
             url: '/auth',
             dataType: 'json',
+            async: false,
             success: function(data)
             {
+                __requestComplete = true;
                 value = data.auth;
             }
         });
@@ -68,7 +70,7 @@
     }
 
     $(window).on('focus blur load', function() {
-        var urls = ["/user/login/", "/user/login", "/user/regist/", "/user/activate/"];
+        var urls = ["/user/login/", "/user/login", "/user/regist/", "/user/activate", "/user/reset_password/", "/user/reset/", "/user/reset"];
         var url = document.location.pathname;
 
         proverka = in_array(url, urls);

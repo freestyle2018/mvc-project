@@ -13,3 +13,5 @@
     <p><input type="submit">
     </p>
 </form>
+
+<a href="/user/reset_password/">Forgot your password?</a>

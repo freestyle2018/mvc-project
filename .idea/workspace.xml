@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b2aff7b-b053-4ac2-bfbd-b0eb1785c9b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/user/activate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/user/reset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/user/reset2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Authentication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Filter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/phpauth/phpauth/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpauth/phpauth/Auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layouts/first_layouts.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/first_layouts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/user/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/info.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/user/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,19 +78,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/user" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\PhpstormProjects\mvc-project\views\user" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\PhpstormProjects\mvc-project\views\user" />
       <recent name="C:\Users\admin\PhpstormProjects\mvc-project\views" />
       <recent name="C:\Users\troin\PhpstormProjects\mvc-project\js" />
       <recent name="C:\Users\troin\PhpstormProjects\mvc-project\css" />
       <recent name="C:\Users\troin\PhpstormProjects\mvc-project\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\PhpstormProjects\mvc-project\views\user" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -124,7 +125,9 @@
       <workItem from="1586446411468" duration="608000" />
       <workItem from="1586503063031" duration="10952000" />
       <workItem from="1586615819282" duration="16483000" />
-      <workItem from="1586668669829" duration="23815000" />
+      <workItem from="1586668669829" duration="23914000" />
+      <workItem from="1586711769536" duration="7036000" />
+      <workItem from="1586764904527" duration="3554000" />
     </task>
     <servers />
   </component>
@@ -165,20 +168,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585722035091" />
-    <state x="565" y="310" key="NewPhpFileDialog" timestamp="1586696475578">
+    <state x="565" y="310" key="NewPhpFileDialog" timestamp="1586712269569">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="565" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586696475578" />
+    <state x="565" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586712269569" />
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585796874635" />
     <state x="220" y="0" key="SettingsEditor" timestamp="1586334116908">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="220" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586334116908" />
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585718540155" />
-    <state x="365" y="146" key="com.intellij.ide.util.TipDialog" timestamp="1586668674405">
+    <state x="365" y="146" key="com.intellij.ide.util.TipDialog" timestamp="1586764905921">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="365" y="146" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586668674405" />
+    <state x="365" y="146" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586764905921" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585791237673" />
     <state x="380" y="0" width="606" height="728" key="find.popup" timestamp="1586506873197">
       <screen x="0" y="0" width="1366" height="728" />

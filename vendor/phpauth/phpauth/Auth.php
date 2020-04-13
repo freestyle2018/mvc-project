@@ -1721,7 +1721,7 @@ VALUES (:uid, :hash, :expiredate, :ip, :agent, :cookie_crc)
             //if ($this->config->smtp) {
 
                 if ($this->config->smtp_debug) {
-                    $mail->SMTPDebug = $this->config->smtp_debug;
+                    //$mail->SMTPDebug = $this->config->smtp_debug;
                 }
 
                 $mail->isSMTP();

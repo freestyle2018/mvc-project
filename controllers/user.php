@@ -113,13 +113,7 @@ Class Controller_User Extends Controller_Base {
 
         if($auth == "on"){
             $data = self::$auth->activate($code);
-
-            if($data['error']){
-                $this->template->vars('message', $data['message']);
-            }
-            else{
-                $this->template->vars('message', $data['message']);
-            }
+            $this->template->vars('message', $data['message']);
         }
         else{
             $this->template->vars('message', "");
@@ -128,6 +122,57 @@ Class Controller_User Extends Controller_Base {
         $this->template->vars('code', $code);
         $this->template->view('activate');
     }
+
+    function reset_password() {
+        $auth = new Authentication();
+        $authentication = $auth->index();
+
+        $mail = empty($_POST['mail']) ? '' : $_POST['mail'];
+        $auth = empty($_POST['auth']) ? 'off' : $_POST['auth'];
+
+        if($auth == "on"){
+            $data = self::$auth->requestReset($mail);
+            $this->template->vars('message', $data['message']);
+        }
+        else{
+            $this->template->vars('message', "");
+        }
+
+
+        $this->template->vars('authentication', $authentication["auth"]);
+        $this->template->vars('mail', $mail);
+
+        $this->template->view('reset');
+    }
+
+    function reset() {
+        $filter = new Filter();
+        $auth = new Authentication();
+        $authentication = $auth->index();
+
+        $code = $filter->out('string',(empty($_POST['code']) ? '' : $_POST['code']));
+        $pass_1 = $filter->out('string',(empty($_POST['pass_1']) ? '' : $_POST['pass_1']));
+        $pass_2 = $filter->out('string',(empty($_POST['pass_2']) ? '' : $_POST['pass_2']));
+        $auth = $filter->out('string',(empty($_POST['auth']) ? 'off' : $_POST['auth']));
+
+        if($auth == "on"){
+            $data = self::$auth->resetPass($code, $pass_1, $pass_2);
+            //$info = self::$auth->getBaseUser($data["id"]);
+
+            $this->template->vars('message', $data["message"]);
+        }
+        else{
+            $this->template->vars('message', "");
+        }
+
+
+        $this->template->vars('authentication', $authentication["auth"]);
+        $this->template->vars('code', $code);
+
+        $this->template->view('reset2');
+    }
+
+
 
     function info() {
         $auth = new Authentication();
@@ -139,7 +184,7 @@ Class Controller_User Extends Controller_Base {
             $users = $model->get_Users();
             $this->template->vars('Users', $filter->doXssClean($users));
 
-            $this->template->vars('text', "Текст видный после авторизации!");
+            $this->template->vars('text', "The text is visible after authorization!");
         }
 
         $this->template->vars('authentication', $authentication["auth"]);

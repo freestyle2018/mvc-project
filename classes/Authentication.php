@@ -35,7 +35,7 @@ Class Authentication  extends \PHPUnit\Framework\TestCase
     function index() {
         $result = array();
 
-        if(self::$sess_email != '') {
+        if(isset(self::$sess_email) && self::$sess_email != '') {
             $hash = self::$dbh->query("SELECT hash FROM phpauth_sessions WHERE uid = (SELECT id FROM phpauth_users WHERE email = '".self::$sess_email."');", PDO::FETCH_ASSOC)->fetch()['hash'];
 
             $yslovie = self::$auth->checkSession($hash);
